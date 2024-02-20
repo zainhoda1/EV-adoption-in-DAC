@@ -1,0 +1,185 @@
+---
+title: "Week3 Questionnaire"
+format: html
+editor: visual
+---
+
+# Section 1: Vehicle
+
+### 1(a) Current Vehicle:
+
+-   What is the make and model of your current vehicle?
+
+-   What was the down payment you made for your vehicle?
+
+-   What is your monthly payment?
+
+-   What gas mileage does your vehicle give?
+
+-   How many miles do you drive per week?
+
+-   How many cars do you currently have in your household?
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5 or more
+    - Prefer not to say
+
+-   What type of cars do you have in your household?
+    - Gasoline
+    - Hybrid
+    - Plug-in Hybrid
+    - Electric
+    - Other:
+    
+-   Where can you park at home? (Select all that apply)
+    - Street Parking
+    - Driveway/ Carport
+    - Single-family garage
+    - Shared parking garage
+    - Shared parking lot
+    - Prefer not to say
+    - Other:
+    
+-   Do any of your neighbors own/lease a plug-in hybrid or pure electric vehicle (Select one)
+    - Yes
+    - No
+    - I'm not sure
+
+### 1(b) Future Vehicle:
+
+-   When are you planning to buy your next vehicle?
+
+-   When you are ready to buy your next car, will you be shopping for new or used vehicles?
+
+    -   New
+    -   Used
+    -   Both
+    -   I'm not sure
+
+-   Will you plan to lease or buy?
+
+    -   Lease
+    -   Purchase
+    -   I'm not sure
+
+-   What car type(s) will you be shopping for? (Select all that apply)
+
+     - Hatchback
+     - Sedan
+     - SUV
+     - Truck
+     - Minivan
+     - Other:
+
+-   What is your maximum budget for your next car purchase?
+
+-   What will be your down payment for your next car?
+
+-   Would you consider a Plug-in Hybrid Electric vehicle as your next vehicle?
+    - Definitely not
+    - Probably not
+    - Maybe/ Not sure
+    - Probably Yes
+    
+
+# Section 2(a): Household
+
+-   What is your household annual income?
+
+    -   Less than \$10,000
+    -   \$10,000 - \$14,999
+    -   \$15,000 - \$19,999
+    -   \$20,000 - \$24,999
+    -   \$25,000 - \$29,999
+    -   \$30,000 - \$34,999
+    -   \$35,000 - \$39,999
+    -   \$40,000 - \$44,999
+    -   \$45,000 - \$49,999
+    -   \$50,000 - \$54,999
+    -   \$55,000 - \$59,999
+    -   \$60,000 - \$69,999
+    -   \$70,000 - \$79,999
+    -   \$80,000 - \$89,999
+    -   \$90,000 - \$99,999
+    -   More than 100,000
+    -   Prefer not to say
+
+-   In what of housing do you currently live?
+
+    -   Detached house / single family home
+    -   Attached house / (townhouse/duplex/triplex)
+    -   Condominium
+    -   Apartment Building
+    -   Mobile Home
+    -   Prefer not to say
+    -   Other:
+
+-   Do you own or rent your current residence?
+    - Own
+    - Rent
+    - Prefer not to say
+    - Other:
+
+-   What is your monthly electricity bill?
+
+### 2(b) Basic Demographic information (to be added):
+
+
+
+# Section3 : Knowledge section & Best Worst feature
+
+### 3 (a) Knowledge Section:
+
+-   Please select which vehicle(s) can run on gasoline: (select all that apply)
+    - Hybrid Electric Vehicle
+    - Plug-in Hybrid Electric Vehicle
+    - Pure Electric Vehicle
+    
+-   Please select which vehicles can be plugged-in: (Select all that apply)
+    - Hybrid Electric Vehicle
+    - Plug-in Hybrid Electric Vehicle
+    - Pure Electric Vehicle
+    
+-   Do you know the current maximum subsidy available from the US federal government for purchasing an electric vehicle?
+
+    - $1,000
+    - $2,500
+    - $5,000
+    - $7,500
+    - $10,000
+    - I'm not sure
+    
+    
+### 3 (b) Best Worst Features:
+
+1.  The vehicle should be CPO
+
+2.  Importance of Brand reliability
+
+3.  Service/Maintenance records availability.
+
+4.  Previous Ownership/s of the car.
+
+5.  Clean Title of Vehicle
+
+6.  Where was the vehicle bought/used ?
+
+7.  Vehicle warranty
+
+8.  Customer satisfaction return window
+
+9.  Vehicle Owner manual availability
+
+10. Availability of spare tires and jacking tools
+
+11. Pre-approved loan for the vehicle
+
+12. Pre-purchase independent inspection
+
+13. Test Driving the car
+
+14. What was the car used for?
+
+15. Mileage on the car

@@ -1,0 +1,77 @@
+---
+title: "2nd hand car questions"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Sources:
+
+[Link1 - Forbes.com](https://www.forbes.com/wheels/advice/what-to-look-for-when-buying-used-car/)
+
+[Link2 - Edmunds.com](https://www.edmunds.com/car-buying/10-steps-to-buying-a-used-car.html)
+
+[Link3 - car.usnews.com](https://cars.usnews.com/cars-trucks/advice/how-to-buy-a-used-car)
+
+[Link4 - nerdwallet](https://www.nerdwallet.com/article/loans/auto-loans/10-questions-to-ask-when-buying-a-used-car)
+
+1.  Are you going for CPO (Certified Pre-Owned Vehicles) ?
+
+2.  Research on reliable brand. (Ex: Costs more to maintain a Lexus than a Toyota)
+
+3.  Do you have service/maintenance records for the car?
+
+4.  How many owners has it had?
+
+5.  Does the vehicle have a clean title (beware of salvage -- includes flood cars and rebuilt titles)? Paying for a service that checks title status and may have listings for service records like CarFax is a wise expenditure.
+
+6.  Where was the vehicle driven or where did it come from? This is a very important question to ask as vehicles from salt water climate areas like Florida and winter climates where heavy salting of the roads can be prone to moderate to severe rusting.
+
+7.  Does the vehicle come with a warranty? How much of that warranty is left? If you're at a dealer, can you purchase an extended warranty?
+
+8.  Is there a customer satisfaction return window? How long?
+
+9.  How many keys come with the vehicle? Remember, during the microchip shortage, additional keys, even for used cars, may be hard to come by.
+
+10. Are the owner's manuals in the car? Check and make sure for yourself. Owner's manuals are the "bible" for your car, and provide all of the information you need on how to properly operate your vehicle and when to service it. If you buy from a dealer and the car you want to buy doesn't have manuals, make a new, free set of manuals part of the deal.
+
+11. Are the spare tire and jacking tools present and in good shape?
+
+12. Does the vehicle have floor mats? In used vehicles, these are often stored in the trunk/hatch area to keep them clean for the new buyer.
+
+13. How should you decide your budget? Considering old cars require more upkeep.
+
+14. Check Vehicle history report (same as point 5)
+
+15. Try to get a pre-approved loan for the car, there are multiple avenues like banks, credit unions, community banks etc.
+
+16. Pre-purchase independent inspection
+
+17. Test Driving the car
+
+--------------
+Section 1(a) : Current vehicle
+Section 1(b) : Future vehicle
+Section 2 : Household
+Section 3(a) : Knowledge section
+Section 3(b) : Best Worst feature
+
+
+
+
+Current Car:
+
+Make, model, mileage , price paid, current financing options. 
+
+Future Car:
+
+Are you planning to purchase a car in the next 2 years / When are you planning to buy your next car?
+
+
+What is your monthly 
+
+
+
