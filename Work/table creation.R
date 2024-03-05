@@ -14,14 +14,14 @@ atts <- data.frame(
   attribute = c(
     'Certified Pre-Owned (CPO) vehicle',
     'Brand reputation',
-    'Maintenance records available',     
+    'Maintenance records available',
     'Number of previous owners',
     'Vehicle history report available',
     'Where was the vehicle bought/used?',
     'Vehicle fuel efficiency',
     'Vehicle warranty',
     'Customer satisfaction return window',
-    'Spare tires and jacking tools included',     
+    'Spare tires and jacking tools included',
     'Pre-approved loan for the vehicle',
     'Pre-purchase independent inspection',
     'Test-driving the vehicle',
@@ -48,7 +48,7 @@ for (i in 1:n_resp) {
   set2 <- sample(x = att, size = n_q*n_atts - nrow(atts), replace = FALSE)
   design <- data.frame(
     respID = i, 
-    qID = rep(seq(n_q), each = n_atts), 
+    qID = rep(seq(n_q), each = n_atts),
     altID = rep(options, times = n_q),
     attID = c(set1, set2)
   )
@@ -61,7 +61,7 @@ design <- do.call(rbind, result)
 table(design$attID)
 
 # Join on attribute labels
-design <- design %>% 
+design <- design %>%
   left_join(atts, by = 'attID')
 
 # Check counts
