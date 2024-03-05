@@ -10,17 +10,46 @@ options <-seq(5)
 n_resp <- 100
 result <- list()
 
-#set3 <- sample(x = att, size = 22, replace = FALSE)
+atts <- data.frame(
+  attribute = c(
+    'Certified Pre-Owned (CPO) vehicle',
+    'Brand reputation',
+    'Maintenance records available',     
+    'Number of previous owners',
+    'Vehicle history report available',
+    'Where was the vehicle bought/used?',
+    'Vehicle fuel efficiency',
+    'Vehicle warranty',
+    'Customer satisfaction return window',
+    'Spare tires and jacking tools included',     
+    'Pre-approved loan for the vehicle',
+    'Pre-purchase independent inspection',
+    'Test-driving the vehicle',
+    'Mileage on the vehicle',
+    'Purchase price',
+    'Vehicle seating capacity',
+    'Options and features',
+    'Resale value',
+    'Insurance cost',
+    'Vehicle age',
+    'Interior/exterior condition',
+    'Cargo space'
+  )
+)
+atts$attID <- seq(nrow(atts))
+
+n_q <- 6
+n_atts <- 5
 
 for (i in 1:n_resp) {
   
   # Get random attribute IDs
-  set1 <- sample(x = att, size = 22, replace = FALSE)
-  set2 <- sample(x = att, size = 8, replace = FALSE)
+  set1 <- sample(x = att, size = nrow(atts), replace = FALSE)
+  set2 <- sample(x = att, size = n_q*n_atts - nrow(atts), replace = FALSE)
   design <- data.frame(
     respID = i, 
-    qID = rep(seq(6), each = 5), 
-    rep(options, times= 6),
+    qID = rep(seq(n_q), each = n_atts), 
+    altID = rep(options, times = n_q),
     attID = c(set1, set2)
   )
   result[[i]] <- design
@@ -31,31 +60,9 @@ design <- do.call(rbind, result)
 # Check counts
 table(design$attID)
 
-
-design$issue <- with(design, ifelse(attID == 1, 'Certified Pre-Owned (CPO) vehicle',
-                              ifelse(attID ==2 , 'Brand reputation',
-                              ifelse(attID ==3 , 'Maintenance records available',     
-                              ifelse(attID ==4 , 'Number of previous owners',
-                              ifelse(attID ==5 , 'Vehicle history report available',
-                              ifelse(attID ==6 , 'Where was the vehicle bought/used?',
-                              ifelse(attID ==7 , 'Vehicle fuel efficiency',
-                              ifelse(attID ==8 , 'Vehicle warranty',
-                              ifelse(attID ==9 , 'Customer satisfaction return window',
-                              ifelse(attID ==10 , 'Spare tires and jacking tools included',     
-                              ifelse(attID ==11 , 'Pre-approved loan for the vehicle',
-                              ifelse(attID ==12 , 'Pre-purchase independent inspection',
-                              ifelse(attID ==13 , 'Test-driving the vehicle',
-                              ifelse(attID ==14 , 'Mileage on the vehicle',
-                              ifelse(attID ==15 , 'Purchase price',
-                              ifelse(attID ==16 , 'Vehicle seating capacity',
-                              ifelse(attID ==17 , 'Options and features',
-                              ifelse(attID ==18 , 'Resale value',     
-                              ifelse(attID ==19 , 'Insurance cost',
-                              ifelse(attID ==20 , 'Vehicle age',
-                              ifelse(attID ==21 , 'Interior/exterior condition',
-                              ifelse(attID ==22 , 'Cargo space', 'empty'
-                                     )))))))))))))))))))))))
-
+# Join on attribute labels
+design <- design %>% 
+  left_join(atts, by = 'attID')
 
 # Check counts
 table(design$issue)
