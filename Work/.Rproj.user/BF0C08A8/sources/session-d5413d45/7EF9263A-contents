@@ -5,6 +5,7 @@ library(readr)
 library(here)
 
 att <- seq(22)
+options <-seq(5)
 
 n_resp <- 100
 result <- list()
@@ -19,6 +20,7 @@ for (i in 1:n_resp) {
   design <- data.frame(
     respID = i, 
     qID = rep(seq(6), each = 5), 
+    altID = rep(options, times= 6),
     attID = c(set1, set2)
   )
   result[[i]] <- design
