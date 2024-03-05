@@ -1,10 +1,26 @@
 ---
-title: "Week3 Questionnaire"
+title: "Max Diff Survey"
 format: html
 editor: visual
 ---
 
-# Section 1: Vehicle
+## This survey is designed to identify the most and least important features while buying a used car.
+
+This survey will take about **10 minutes** to complete. Likewise, it can be stopped and picked up at any time. Your personal information will be kept private and won't be shared with anyone else.
+
+This survey consists of 3 sections:
+
+-  Section 1 - Vehicle Information
+-  Section 2 - Demographic Information
+-  Section 3 - Knowledge section & Best Worst features
+
+If you have any questions, you can reach out to us at [gwuvehicle@gmail.com](mailto:gwuvehicle@gmail.com). We will respond at our first convenience. The Office of Human Research of George Washington University, at telephone number (202) 994-2715, can provide further information about your rights as a research participant.
+
+The survey proceeds upon clicking the **"Let's Continue"** button below. We greatly appreciate your participation!
+
+
+
+## Section 1: Vehicle Information
 
 ### 1(a) Current Vehicle:
 
@@ -21,9 +37,7 @@ editor: visual
 -   How many cars do you currently have in your household?
     - 1
     - 2
-    - 3
-    - 4
-    - 5 or more
+    - 3 or more
     - Prefer not to say
 
 -   What type of cars do you have in your household?
@@ -84,7 +98,53 @@ editor: visual
     - Probably Yes
     
 
-# Section 2(a): Household
+## Section 2: Demographic Information
+
+-   In what year were you born?
+    -   Select Year 1920-2003
+    -   Prefer not to say
+    
+-   What gender do you identify with?
+    -   Female
+    -   Male
+    -   Non-binary
+    -   Prefer not to say
+    -   Other:
+    
+-   I identify my ethnicity as:(select all that apply):
+    -   Asian
+    -   Black/African
+    -   White
+    -   Hispanic/Latinx
+    -   Native American
+    -   Pacific Islander
+    -   Prefer not to say
+    -   Other:
+
+-   What is the highest degree or level of school you have completed? If currently enrolled, please use the highest degree received.
+
+    -   Less than a high school diploma
+    -   High school degree or equivalent(e.g. GED)
+    -   Some college or university, no college degree
+    -   Trade/technical/vocational training, no degree awarded
+    -   Associate degree(e.g. AA, AS)
+    -   Bachelor's degree(e.g. BA, BS)
+    -   Master's degree(e.g. MA, MS, MEd)
+    -   Professional degree(e.g. MD, DDS, DVM)
+    -   Doctorate (e.g. PhD, EdD)
+    -   Prefer not to say
+    
+-   Which of the following categories best describes your current employment status?
+
+    -   I am a full time student.
+    -   Employed, working 1-39 hours per week.
+    -   Employed, working 40 or more hours per week.
+    -   Not employed, looking for work.
+    -   Not employed, NOT looking for work.
+    -   Retired.
+    -   Disabled, not able to work.
+    -   Prefer not to say
+    
 
 -   What is your household annual income?
 
@@ -106,7 +166,7 @@ editor: visual
     -   More than 100,000
     -   Prefer not to say
 
--   In what of housing do you currently live?
+-   In which type of housing do you currently live?
 
     -   Detached house / single family home
     -   Attached house / (townhouse/duplex/triplex)
@@ -117,18 +177,34 @@ editor: visual
     -   Other:
 
 -   Do you own or rent your current residence?
-    - Own
-    - Rent
-    - Prefer not to say
-    - Other:
+    -   Own
+    -   Rent
+    -   Prefer not to say
+    -   Other:
 
 -   What is your monthly electricity bill?
 
-### 2(b) Basic Demographic information (to be added):
+-   How many people live in your household?
+    -   1
+    -   2
+    -   3
+    -   4
+    -   5 or more
+    -   Prefer not to say
+    
+-   How would you describe your political views?
+    -   Very conservative
+    -   Conservative
+    -   Moderate
+    -   Liberal
+    -   Very Liberal
+    -   Prefer not to say
+    -   Other:
 
 
 
-# Section3 : Knowledge section & Best Worst feature
+
+## Section3 : Knowledge section & Best Worst features
 
 ### 3 (a) Knowledge Section:
 
@@ -152,17 +228,17 @@ editor: visual
     - I'm not sure
     
     
-### 3 (b) Best Worst Features:
+### 3 (b) List of used car features shown for Best Worst Features:
 
-1.  The vehicle should be CPO
+1.   Certified Pre-Owned (CPO) Vehicle
 
-2.  Importance of Brand reliability
+2.  Brand/Vehicle Reputation.
 
-3.  Service/Maintenance records availability.
+3.  Service Records.
 
-4.  Previous Ownership/s of the car.
+4.  Previous Ownership/s of the vehicle
 
-5.  Clean Title of Vehicle
+5.  Vehicle History Report
 
 6.  Where was the vehicle bought/used ?
 
@@ -178,8 +254,20 @@ editor: visual
 
 12. Pre-purchase independent inspection
 
-13. Test Driving the car
+13. Test Driving the vehicle
 
-14. What was the car used for?
+14. Cost of vehicle
 
-15. Mileage on the car
+15. Mileage on the vehicle
+
+16. What mileage does the vehicle give?
+
+17. Vehicle Capacity
+
+18. Options and features
+
+19. Resale Value
+
+20. Insurance costs
+
+

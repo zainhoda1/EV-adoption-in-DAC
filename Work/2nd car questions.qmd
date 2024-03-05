@@ -52,26 +52,16 @@ Quarto enables you to weave together content and executable code into a finished
 
 17. Test Driving the car
 
---------------
-Section 1(a) : Current vehicle
-Section 1(b) : Future vehicle
-Section 2 : Household
-Section 3(a) : Knowledge section
-Section 3(b) : Best Worst feature
+------------------------------------------------------------------------
 
-
-
+Section 1(a) : Current vehicle Section 1(b) : Future vehicle Section 2 : Household Section 3(a) : Knowledge section Section 3(b) : Best Worst feature
 
 Current Car:
 
-Make, model, mileage , price paid, current financing options. 
+Make, model, mileage , price paid, current financing options.
 
 Future Car:
 
 Are you planning to purchase a car in the next 2 years / When are you planning to buy your next car?
 
-
-What is your monthly 
-
-
-
+What is your monthly

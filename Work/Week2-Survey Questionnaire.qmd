@@ -28,10 +28,9 @@ knitr::opts_chunk$set(
 
 ```
 
+## Objective -
 
-## Objective - 
-This survey will be fielded after the pre-screening has been done (based on location and car ownership) and the objective of this survey to get us correct option choices to field the conjoint survey. 
-
+This survey will be fielded after the pre-screening has been done (based on location and car ownership) and the objective of this survey to get us correct option choices to field the conjoint survey.
 
 ## Questions:
 
@@ -70,7 +69,7 @@ This survey will be fielded after the pre-screening has been done (based on loca
 
 -   Yes / No
 
-### Q5: What is the average monthly payment ($) you are hoping for your car (60 months) / paying for your current car ?
+### Q5: What is the average monthly payment (\$) you are hoping for your car (60 months) / paying for your current car ?
 
 -   300-400
 -   400-500
@@ -108,15 +107,15 @@ This survey will be fielded after the pre-screening has been done (based on loca
 
 ### Q10: What percentage of your household income is your electricity bill?
 
--  0-5
--  5-10
--  10-15
--  15-20
--  20-25
--  25-30
--  30-35
--  35-40
--  Over 40
+-   0-5
+-   5-10
+-   10-15
+-   15-20
+-   20-25
+-   25-30
+-   30-35
+-   35-40
+-   Over 40
 
 ### Q11: Are you considering buying an Electric Car?
 

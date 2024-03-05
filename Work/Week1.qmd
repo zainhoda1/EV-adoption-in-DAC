@@ -62,9 +62,9 @@ knitr::opts_chunk$set(
 # Prof's Questions:
 
 -   What is the household income distribution across households in DACs?
--   What is the car buying situation in DACs? What % buy used vs new? What is the typical budget? 
-- How important is financing? Is monthly payment as important as up-front price?
-- How important is operating costs, like fuel and insurance, relative to up front price?
+-   What is the car buying situation in DACs? What % buy used vs new? What is the typical budget?
+-   How important is financing? Is monthly payment as important as up-front price?
+-   How important is operating costs, like fuel and insurance, relative to up front price?
 -   How far do people in DACs typically drive each year?
 -   What is the housing situation in DACs? What % own their own home, what % live in apartments vs. single family homes, etc.
 
@@ -111,7 +111,7 @@ The Energy Justice Mapping Tool -- Disadvantaged Communities Reporter is undergo
 # Exploratory view of Data
 
 | Variable Name            | Description           | Definition                                                                                                                |           |
-|-----------------|----------------|----------------------------|------------|
+|----------------|----------------|-------------------------|----------------|
 | ej_index_diesel          | diesel                | EJ Index for Diesel particulate matter level in air                                                                       | Direct    |
 | over_30min_commute_pct   | \>30 min commute      | Percent of total population with a drive time to employment greater than or equal to 30 minutes                           | Direct    |
 | no_car_pct               | No Vehicle            | Percent of total population with no vehicle(s) available                                                                  | Direct    |
@@ -173,7 +173,6 @@ hist(x = df_no_car$no_car_pct,
 
 ```
 
-
 ```{r}
 
 hist(x = df$renters_pct, 
@@ -183,4 +182,3 @@ hist(x = df$renters_pct,
      xlab= "% of Population")
 
 ```
-

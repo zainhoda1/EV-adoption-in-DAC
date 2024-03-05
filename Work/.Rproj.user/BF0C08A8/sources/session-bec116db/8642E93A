@@ -1,0 +1,26 @@
+{
+    "id": "8642E93A",
+    "path": "D:/Github/EV-adoption-in-DAC/Work/foo.R",
+    "project_path": "foo.R",
+    "type": "r_source",
+    "hash": "2468109550",
+    "contents": "",
+    "dirty": false,
+    "created": 1709061678097.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "48,54",
+        "scrollLine": "36"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1709308853,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1709308853082,
+    "read_only": false,
+    "read_only_alternatives": []
+}
