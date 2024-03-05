@@ -20,7 +20,7 @@ for (i in 1:n_resp) {
   design <- data.frame(
     respID = i, 
     qID = rep(seq(6), each = 5), 
-    rep(options, times= 6),
+    altID = rep(options, times= 6),
     attID = c(set1, set2)
   )
   result[[i]] <- design
