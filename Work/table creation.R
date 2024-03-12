@@ -4,7 +4,7 @@ library(cbcTools)
 library(readr)
 library(here)
 
-att <- seq(22)
+att <- seq(17)
 options <-seq(5)
 
 n_resp <- 100
@@ -13,24 +13,19 @@ result <- list()
 atts <- data.frame(
   attribute = c(
     'Certified Pre-Owned (CPO) vehicle',
-    'Brand reputation',
-    'Maintenance records available',
+    'Brand/Make',
     'Number of previous owners',
     'Vehicle history report available',
-    'Where was the vehicle bought/used?',
+    'Where was the vehicle previously used?',
     'Vehicle fuel efficiency',
     'Vehicle warranty',
-    'Customer satisfaction return window',
-    'Spare tires and jacking tools included',
+    'Return window',
     'Pre-approved loan for the vehicle',
     'Pre-purchase independent inspection',
     'Test-driving the vehicle',
     'Mileage on the vehicle',
     'Purchase price',
     'Vehicle seating capacity',
-    'Options and features',
-    'Resale value',
-    'Insurance cost',
     'Vehicle age',
     'Interior/exterior condition',
     'Cargo space'
