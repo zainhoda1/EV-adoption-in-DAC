@@ -7,7 +7,7 @@ library(here)
 att <- seq(17)
 options <-seq(5)
 
-n_resp <- 1
+n_resp <- 100
 result <- list()
 
 print(att)
@@ -84,7 +84,9 @@ table(design$issue)
 
 info<-  design %>%
   group_by(respID, qID) %>%
-  summarize(distinct_points = distinct(attID))
+  summarize(distinct_points = n_distinct(attID))
 
 to_remove <- info[info$distinct_points < 5, ]$respID
 to_remove
+
+print(length(to_remove))

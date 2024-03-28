@@ -7,7 +7,7 @@ library(here)
 att <- seq(17)
 options <-seq(5)
 
-n_resp <- 100
+n_resp <- 10000
 result <- list()
 
 atts <- data.frame(
@@ -67,3 +67,26 @@ design <- design %>%
 table(design$issue)
 
 #write_csv(design, here('data', 'choice_options.csv'))
+
+info<-  design %>%
+  group_by(respID, qID) %>%
+  summarize(distinct_points = n_distinct(attID))
+
+to_remove <- unique(info[info$distinct_points< 5, ]$respID)
+to_remove
+
+print(length(to_remove))
+
+
+
+design2 <- design[!(design$respID %in% to_remove ),]
+
+
+info2<-  design2 %>%
+  group_by(respID, qID) %>%
+  summarize(distinct_points = n_distinct(attID))
+
+to_remove2 <- info2[info2$distinct_points == 5, ]$respID
+to_remove2
+
+length(unique(to_remove2))
