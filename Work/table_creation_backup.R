@@ -7,8 +7,19 @@ library(here)
 att <- seq(17)
 options <-seq(5)
 
-n_resp <- 100
+n_resp <- 1
 result <- list()
+
+print(att)
+
+set3 <- sample(x = att, size = nrow(atts), replace = FALSE)
+print(set3)
+print(set3[c(16:17)])
+to_remove <- set3[c(16:17)]
+print(to_remove)
+revised_att <- set3[- to_remove] 
+revised_att
+
 
 atts <- data.frame(
   attribute = c(
@@ -41,6 +52,8 @@ for (i in 1:n_resp) {
   # Get random attribute IDs
   set1 <- sample(x = att, size = nrow(atts), replace = FALSE)
   set2 <- sample(x = att, size = n_q*n_atts - nrow(atts), replace = FALSE)
+  break
+  
   design <- data.frame(
     respID = i, 
     qID = rep(seq(n_q), each = n_atts),
@@ -67,3 +80,11 @@ design <- design %>%
 table(design$issue)
 
 #write_csv(design, here('data', 'choice_options.csv'))
+
+
+info<-  design %>%
+  group_by(respID, qID) %>%
+  summarize(distinct_points = distinct(attID))
+
+to_remove <- info[info$distinct_points < 5, ]$respID
+to_remove
