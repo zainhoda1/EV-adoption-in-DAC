@@ -64,7 +64,7 @@ design <- design %>%
 
 
 # Check counts
-table(design$issue)
+table(design$attID)
 
 #write_csv(design, here('data', 'choice_options.csv'))
 
@@ -81,6 +81,8 @@ print(length(to_remove))
 
 design2 <- design[!(design$respID %in% to_remove ),]
 
+table(design2$attID)
+
 
 info2<-  design2 %>%
   group_by(respID, qID) %>%
@@ -90,3 +92,5 @@ to_remove2 <- info2[info2$distinct_points == 5, ]$respID
 to_remove2
 
 length(unique(to_remove2))
+
+
