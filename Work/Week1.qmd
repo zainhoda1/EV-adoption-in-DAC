@@ -111,7 +111,7 @@ The Energy Justice Mapping Tool -- Disadvantaged Communities Reporter is undergo
 # Exploratory view of Data
 
 | Variable Name            | Description           | Definition                                                                                                                |           |
-|----------------|----------------|-------------------------|----------------|
+|--------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
 | ej_index_diesel          | diesel                | EJ Index for Diesel particulate matter level in air                                                                       | Direct    |
 | over_30min_commute_pct   | \>30 min commute      | Percent of total population with a drive time to employment greater than or equal to 30 minutes                           | Direct    |
 | no_car_pct               | No Vehicle            | Percent of total population with no vehicle(s) available                                                                  | Direct    |

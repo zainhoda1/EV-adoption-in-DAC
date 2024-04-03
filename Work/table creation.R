@@ -7,7 +7,7 @@ library(here)
 att <- seq(17)
 options <-seq(5)
 
-n_resp <- 15000
+n_resp <- 5000
 result <- list()
 
 atts <- data.frame(
@@ -71,13 +71,20 @@ info<-  design %>%
   summarize(distinct_points = n_distinct(attID))
 
 to_remove <- unique(info[info$distinct_points< 5, ]$respID)
-to_remove
+#to_remove
 
 print(length(to_remove))
 
 design2 <- design[!(design$respID %in% to_remove ),]
 
-write_csv(design2, here('data', 'choice_options.csv'))
+write_csv(design2, here('data', 'choice_options1.csv'))
+#write_csv(design, here('data', 'choice_options.csv'))
 
 # Check counts
-table(design$attID)
+table(design2$attID)
+
+#design$respID
+#design2$respID
+
+
+sample(design2$respID, 1)

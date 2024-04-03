@@ -3153,10 +3153,10 @@ vertical-align: -.125em;
 <h1>Exploratory view of Data</h1>
 <table class="table">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 21%">
-<col style="width: 38%">
-<col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 67%">
+<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -3655,9 +3655,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="fu"># Prof&#39;s Questions:</span></span>
 <span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the household income distribution across households in DACs?</span>
-<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the car buying situation in DACs? What % buy used vs new? What is the typical budget? </span>
-<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How important is financing? Is monthly payment as important as up-front price?</span>
-<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How important is operating costs, like fuel and insurance, relative to up front price?</span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the car buying situation in DACs? What % buy used vs new? What is the typical budget?</span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How important is financing? Is monthly payment as important as up-front price?</span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How important is operating costs, like fuel and insurance, relative to up front price?</span>
 <span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How far do people in DACs typically drive each year?</span>
 <span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the housing situation in DACs? What % own their own home, what % live in apartments vs. single family homes, etc.</span>
 <span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
@@ -3704,7 +3704,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a><span class="fu"># Exploratory view of Data</span></span>
 <span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a>| Variable Name            | Description           | Definition                                                                                                                |           |</span>
-<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a>|-----------------|----------------|----------------------------|------------|</span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a>|--------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|</span>
 <span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>| ej_index_diesel          | diesel                | EJ Index for Diesel particulate matter level in air                                                                       | Direct    |</span>
 <span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>| over_30min_commute_pct   | <span class="sc">\&gt;</span>30 min commute      | Percent of total population with a drive time to employment greater than or equal to 30 minutes                           | Direct    |</span>
 <span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a>| no_car_pct               | No Vehicle            | Percent of total population with no vehicle(s) available                                                                  | Direct    |</span>
@@ -3765,15 +3765,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-181"><a href="#cb7-181" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-182"><a href="#cb7-182" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-183"><a href="#cb7-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-184"><a href="#cb7-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-187"><a href="#cb7-187" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-188"><a href="#cb7-188" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="at">x =</span> df<span class="sc">$</span>renters_pct, </span>
-<span id="cb7-189"><a href="#cb7-189" aria-hidden="true" tabindex="-1"></a>     <span class="at">breaks =</span> <span class="dv">20</span>,</span>
-<span id="cb7-190"><a href="#cb7-190" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Proportion of occupied housing units not occupied by property owners &quot;</span>,</span>
-<span id="cb7-191"><a href="#cb7-191" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;count of tract&quot;</span>,</span>
-<span id="cb7-192"><a href="#cb7-192" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span> <span class="st">&quot;% of Population&quot;</span>)</span>
-<span id="cb7-193"><a href="#cb7-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-194"><a href="#cb7-194" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-186"><a href="#cb7-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-187"><a href="#cb7-187" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="at">x =</span> df<span class="sc">$</span>renters_pct, </span>
+<span id="cb7-188"><a href="#cb7-188" aria-hidden="true" tabindex="-1"></a>     <span class="at">breaks =</span> <span class="dv">20</span>,</span>
+<span id="cb7-189"><a href="#cb7-189" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Proportion of occupied housing units not occupied by property owners &quot;</span>,</span>
+<span id="cb7-190"><a href="#cb7-190" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;count of tract&quot;</span>,</span>
+<span id="cb7-191"><a href="#cb7-191" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span> <span class="st">&quot;% of Population&quot;</span>)</span>
+<span id="cb7-192"><a href="#cb7-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-193"><a href="#cb7-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
