@@ -15,47 +15,47 @@ p5 <- read_csv(here("data", "survey_data_download", "DAC_P5.csv"))
 
 p1 <- p1 %>% 
   mutate(
-    created = ymd_hms(created, tz = "EST"),
+    created_p1 = ymd_hms(created, tz = "EST"),
     ended =  ymd_hms(ended, tz = "EST"),
-    time_sec_p1 = as.numeric(ended - created, units = "secs")) %>%
+    time_sec_p1 = as.numeric(ended - created_p1, units = "secs")) %>%
   # Select important columns
-  select(session,ip_address, time_sec_p1, mc_car_make_1 , mc_car_make_2, zip_code)
+  select(session,created_p1, ip_address, time_sec_p1, mc_car_make_1 , mc_car_make_2, zip_code)
 
 
 p2 <- p2 %>% 
   mutate(
-    created = ymd_hms(created),
+    created_p2 = ymd_hms(created),
     ended =  ymd_hms(ended),
-    time_sec_p2 = as.numeric(ended - created, units = "secs")) %>%
+    time_sec_p2 = as.numeric(ended - created_p2, units = "secs")) %>%
   # Select important columns
-  select(session, time_sec_p2, weeklyTravel, parking)
+  select(session,created_p2, time_sec_p2, weeklyTravel, parking)
 
 
 p3 <- p3 %>% 
   mutate(
-    created = ymd_hms(created),
+    created_p3 = ymd_hms(created),
     ended =  ymd_hms(ended),
-    time_sec_p3 = as.numeric(ended - created, units = "secs")) %>%
+    time_sec_p3 = as.numeric(ended - created_p3, units = "secs")) %>%
   # Select important columns
-  select(session, time_sec_p3)
+  select(session,created_p3, time_sec_p3)
 
 
 p4 <- p4 %>% 
   mutate(
-    created = ymd_hms(created),
+    created_p4 = ymd_hms(created),
     ended =  ymd_hms(ended),
-    time_sec_p4 = as.numeric(ended - created, units = "secs")) %>%
+    time_sec_p4 = as.numeric(ended - created_p4, units = "secs")) %>%
   # Select important columns
-  select(session, time_sec_p4, name_electric_vehicle, max_subsidy)
+  select(session,created_p4, time_sec_p4, name_electric_vehicle, max_subsidy)
 
 
 p5 <- p5 %>% 
   mutate(
-    created = ymd_hms(created),
+    created_p5 = ymd_hms(created),
     ended =  ymd_hms(ended),
-    time_sec_p5 = as.numeric(ended - created, units = "secs")) %>%
+    time_sec_p5 = as.numeric(ended - created_p5, units = "secs")) %>%
   # Select important columns
-  select(session,created, time_sec_p5, yearOfBirth, income, feedback)
+  select(session,created_p5, time_sec_p5, yearOfBirth, income, feedback)
 
 
 # Join all parts together using the session variable
@@ -65,8 +65,11 @@ data <- p1 %>%
   left_join(p4, by = "session") %>% 
   left_join(p5, by = "session") %>% 
   # No longer need session variable
-  select(-session)
+  select(-session) %>% 
+  mutate(total_time_min = (time_sec_p1+time_sec_p2+time_sec_p3+time_sec_p4+time_sec_p5)/60)
+
 head(data)
+
 
 
 # Filter out bad responses ---------
@@ -76,6 +79,7 @@ nrow(data)
 
 # Drop people who got screened out
 data <- data %>% 
-  filter(created > '2024-04-16 00:00:00')   %>% 
-  filter(time_sec_p1 > 0) 
+  filter(created_p5 > '2024-04-16 00:00:00')   %>% 
+  filter(time_sec_p5> 0) 
 nrow(data)
+
