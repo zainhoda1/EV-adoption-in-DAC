@@ -130,11 +130,20 @@ median_age <-  median(data$age)
 
 
 gender_table <- data.frame(table(data$gender))
+gender_table <- gender_table %>% rename(  Gender = Var1, Frequency = Freq)
 
 
 income_ranges <- data.frame(table(data$income))
+income_ranges  <- income_ranges %>% rename(  Income_bracket = Var1, Frequency = Freq)
 
-education_ranges <- data.frame(table(data$employment_status))
+employment_ranges <- data.frame(table(data$employment_status))
+employment_ranges  <- employment_ranges %>% rename( Employment_status = Var1, Frequency = Freq)
+
+
+education_ranges <- data.frame(table(data$education))
+education_ranges  <- education_ranges %>% rename( Education_status = Var1, Frequency = Freq)
+
+
 
 #----------------------------------------------------
 # Getting modes of transport data:
@@ -156,21 +165,25 @@ different_transportation_modes <- walk %>%
   left_join(household, by = c("Var1"))  %>% 
   left_join(ride, by = c("Var1")) %>% 
   left_join(taxi, by = c("Var1"))  %>% 
-  replace(is.na(.), 0)
+  replace(is.na(.), 0) %>% 
+  rename(usage = Var1)
 
 #----------------------------------------------------
 
 current_car_purchase_type<- data.frame(table(data$current_car_purchase))  %>% 
-  rename(car_purchase_type = Var1, count = Freq)
+  rename(car_purchase_type = Var1, count = Frequency)
 
 Current_car_price <- data.frame(table(data$current_car_price))  %>% 
-  rename(car_price_band = Var1, count = Freq)
+  rename(car_price_band = Var1, count = Frequency)
 
 monthly_payment <- data.frame(table(data$monthlypayment))  %>% 
-  rename(monthly_payment_band = Var1, count = Freq)
+  rename(monthly_payment_band = Var1, count = Frequency)
 
 refueling_frequncy <- data.frame(table(data$weeklyTravel))  %>% 
-  rename(refueling_rate = Var1, count = Freq)
+  rename(refueling_rate = Var1, count = Frequency)
+
+party_affiliation <- data.frame(table(data$party))  %>% 
+  rename(Party = Var1, count = Freq)
 
 #-----------------------------------------------------
 
@@ -299,9 +312,72 @@ ggplot(df1, aes(x = reorder(attribute, relative_importance), y = relative_import
            show.legend = FALSE,
            fill = 5,          # Background color
            color = "white") + # Border color) +
-  xlab("Relative Importance") +
+  xlab("Attributes") +
   coord_flip() 
 
 
+#----------------------------------------------------------------
+
+
+#gender_distribution <-
+ggplot(gender_table, aes(x = reorder(Gender,Frequency), y = Frequency)) +
+  geom_bar(stat = "identity",
+           show.legend = FALSE,
+           fill = 5,          # Background color
+           color = "white") + # Border color) +
+  xlab("Attributes") #+coord_flip() 
+
+#----------------------------------------------------------------
+
+
+#education_distribution <-
+ggplot(education_ranges, aes(x = Frequency, y = Education_status)) +
+  geom_bar(stat = "identity",
+           show.legend = FALSE,
+           fill = 5,          # Background color
+           color = "white") + # Border color) +
+  xlab("Count") #+coord_flip() 
+
+#----------------------------------------------------------------
+
+
+#Refueling <-
+
+ggplot(party_affiliation, aes(x = reorder(Party, count), y = count)) +
+  geom_bar(stat = "identity",
+           show.legend = FALSE,
+           fill = 5,          # Background color
+           color = "white") + # Border color) +
+  xlab("Party Affiliation") +
+  coord_flip() 
+
+
+
+
+#----------------------------------------------------------------
+
+
+
+
+#Party Affiliation <-
+
+ggplot(refueling_frequncy, aes(x = reorder(refueling_rate, count), y = count)) +
+  geom_bar(stat = "identity",
+           show.legend = FALSE,
+           fill = 5,          # Background color
+           color = "white") + # Border color) +
+  xlab("Refueling Rate") +
+  coord_flip() 
+
+
+
+
+#----------------------------------------------------------------
+
+  
+  
+  
+
+  
 
 
